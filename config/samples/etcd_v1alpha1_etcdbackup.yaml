@@ -1,0 +1,10 @@
+apiVersion: etcd.douban.io/v1alpha1
+kind: EtcdBackup
+metadata:
+  name: etcdbackup-sample
+spec:
+  etcdUrl: <etcd-cluster-endpoints>
+  storageType: s3
+  s3:
+    path: "foo-bucket/snapshot.db"
+    s3Secret: "secret"

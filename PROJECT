@@ -1,0 +1,16 @@
+domain: douban.io
+layout:
+- go.kubebuilder.io/v3
+projectName: etcd-backup
+repo: github.com/MarsMonkey/etcd-backup
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: douban.io
+  group: etcd
+  kind: EtcdBackup
+  path: github.com/MarsMonkey/etcd-backup/api/v1alpha1
+  version: v1alpha1
+version: "3"
